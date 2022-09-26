@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class TesteIdade {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		Cliente cliente = new Cliente();
+		
+		cliente.receberNome("Guilherme");
+		System.out.println("O nome eh: " + cliente.mostrarNome());
+		
+	}
+
+}

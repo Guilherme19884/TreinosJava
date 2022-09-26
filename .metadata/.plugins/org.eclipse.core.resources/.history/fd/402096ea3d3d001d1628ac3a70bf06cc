@@ -1,0 +1,9 @@
+package empresa;
+
+public class Funcionario {
+	private String nome;
+	private String funcao;
+	private int idade;
+	private int id;
+	
+}

@@ -1,0 +1,15 @@
+package testeprivado;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner sc =new Scanner(System.in);
+		Tv tele = new Tv();
+		
+		
+		tele.marca("Lg");
+		
+		System.out.println("A marca eh: " + tele.marca());
+	}
+
+}

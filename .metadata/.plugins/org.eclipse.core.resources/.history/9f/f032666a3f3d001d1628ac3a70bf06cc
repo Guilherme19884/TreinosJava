@@ -1,0 +1,18 @@
+package empresa;
+
+public class Loja {
+
+	public static void main(String[] args) {
+		
+		Funcionario funcionario = new Funcionario();
+		
+		funcionario.pegarNome("Nicolas");
+		funcionario.pegarFuncao("Cientista");
+		funcionario.pegarId(123);
+		funcionario.pegarIdade(0);
+		
+		System.out.println("O nome do funcionario eh: " + funcionario.mostrarNome());
+
+	}
+
+}

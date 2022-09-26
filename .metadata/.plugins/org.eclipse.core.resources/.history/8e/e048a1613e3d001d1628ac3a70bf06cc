@@ -1,0 +1,22 @@
+package empresa;
+
+public class Funcionario {
+	private String nome;
+	private String funcao;
+	private int idade;
+	private int id;
+	
+	public void pegarNome(String nome) {
+		this.nome = nome;
+	}
+	public String mostraNome() {
+		return this.nome;
+	}
+	
+	public void pegarFuncao(String funcao) {
+		this.funcao = funcao;
+	}
+	public String mostraFuncao() {
+		return this.funcao;
+	}
+}

@@ -1,0 +1,48 @@
+package Program;
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Age {
+	static void checkAge (int age){
+		if (age < 18) {
+			System.out.println("Access danied");
+		}
+		else {
+			System.out.println("Access garantied");
+		}
+	}
+}
+
+public class Main {
+	  static void myMethod(String fname) {
+	    System.out.println(fname + " Refsnes");
+	  }
+	  
+	  
+public class Treino {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		//int checkAge ;
+		
+	
+		
+		System.out.println("Enter your age: ");
+		//checkAge = sc.nextInt();
+		//checkAge(20);
+		//myMethod("Liam");
+	    //myMethod("Jenny");
+	    //myMethod("Anja");
+	  }
+		
+		
+		
+		
+		
+		sc.cl
+	}
+
+}

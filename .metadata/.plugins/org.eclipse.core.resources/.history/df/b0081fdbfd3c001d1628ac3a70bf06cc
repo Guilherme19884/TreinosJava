@@ -1,0 +1,13 @@
+
+public class TesteIdade {
+
+	public static void main(String[] args) {
+		Cliente cliente = new Cliente();
+		
+		cliente.receberNome("Guilherme o Gato");
+		cliente.receberIdade(38);
+		
+		
+	}
+
+}
