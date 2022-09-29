@@ -19,13 +19,12 @@ public class Tv {
 		return this.ligada;
 	}
 	
-	//public void desligada(boolean ligada) {
-	//	this.ligada = ligada;
-	// = false;
-	//}
-	public boolean desligada () {
+	public void desligada(boolean ligada) {
 		this.ligada = ligada;
-		ligada = false;
+	
+	}
+	public boolean desligada () {
 		return this.ligada;
 	}
+	
 }
