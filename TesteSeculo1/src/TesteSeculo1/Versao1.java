@@ -3,7 +3,7 @@ package TesteSeculo1;
 public class Versao1 {
 
 	public static void main(String[] args) {
-		int teste = solutionYear(1984);
+		int teste = solutionYear(1601);
 		System.out.println(teste);
 
 	}
@@ -17,3 +17,4 @@ public class Versao1 {
 		return year;
 	}
 }
+// Aqui aprendi a achar a  no Stack OverFlow
