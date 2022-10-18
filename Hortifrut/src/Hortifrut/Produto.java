@@ -8,7 +8,8 @@ public class Produto {
 	private int estoque;
 	private String tipo;
 	private boolean estoqueVazio;
-
+	
+	
 	public float getValor() {
 		return valor;
 	}
@@ -89,15 +90,17 @@ public class Produto {
 	public String toString(){
 		return "Produto cadastrado: " 
 				+ nome 
-				+ ", item: " 
+				+ "\n item: " 
 				+ tipo 
-				+ ", O valor $"
+				+ "\n O valor $"
 				+ valor 
-				+", vai vencer da data de fabricação mais: "
+				+"\n vai vencer da data de fabricacao mais: "
 				+ vencimento 
 				+ " dias"
-				+ ", quantidade no estoque: "
-				+ estoque;
+				+ "\n quantidade no estoque: "
+				+ estoque
+				+ "\n O estoque esta vazio: "
+				+ getEstoqueVazio();
 		
 	}	
-	}
+}

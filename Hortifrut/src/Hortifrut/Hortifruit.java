@@ -16,6 +16,10 @@ public class Hortifruit {
 		String tipo;
 		boolean estoqueVazio;
 		
+		System.out.println("=======================CADASTRO PRODUTO=======================");
+		System.out.println();
+				
+		
 		System.out.println("Digite o nome do produto que vc quer cadatrar: ");
 		nome = sc.next();
 		produto.setNome(nome);
@@ -43,9 +47,12 @@ public class Hortifruit {
 		System.out.println();
 		System.out.println();
 		
-		System.out.println("======================PRODUTO CADASTRADO======================");
+				
+		System.out.println("========================VENDER PRODUTO========================");
 		
 		System.out.println(produto);
+		
+		
 		
 		
 		sc.close();
