@@ -38,6 +38,9 @@ public class ControleRemoto implements Controlador {
 		if (this.getLigado()) {
 			this.setVolume(this.getVolume()+5);
 		}
+		else {
+			System.out.println("Impossível aumentar volume com a tv desligada!");
+		}
 		
 	}
 
