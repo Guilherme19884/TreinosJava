@@ -23,7 +23,7 @@ public class Lutador {
 		System.out.println(this.getEmpates() + " empates");
 	}
 	public void status() {
-		System.out.println(this.getNome() + " é um peso" + this.getCategoria());
+		System.out.println(this.getNome() + " eh um peso" + this.getCategoria());
 		System.out.println("Ganou " + this.getVitorias() + " vezes");
 		System.out.println("Perdeu " + this.getDerrotas() + " vezes");
 		//parei na aula 07 minuto 14:45;
@@ -47,7 +47,7 @@ public class Lutador {
 		this.nacionalidade = na;
 		this.idade = id;
 		this.altura = al;
-		this.peso = pe;
+		this.setPeso(pe);
 		this.vitorias = vi;
 		this.derrotas = de;
 		this.empates = em;
@@ -88,19 +88,19 @@ public class Lutador {
 	}
 	private void setCategoria() {
 		if(this.peso < 52.2 ) {
-			this.categoria = "Inválido";
+			this.categoria = " Inválido";
 		}
 		else if (this.peso <= 70.3) {
-			this.categoria = "leve";
+			this.categoria = " leve";
 		}
 		else if(this.peso <= 83.9) {
-			this.categoria = "Médio";
+			this.categoria = " Médio";
 		}
 		else if(this.peso <= 120.2 ) {
-			this.categoria = "Pesado";
+			this.categoria = " Pesado";
 		}
 		else {
-			this.categoria = "Inválido";
+			this.categoria = " Inválido";
 		}
 	}
 	
