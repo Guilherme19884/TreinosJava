@@ -103,8 +103,12 @@ public class Cat {
 	
 	public void status () {
 		System.out.println("=========================Gatos Cadastrados Descricao=========================");
-		System.out.println("Nome: "+ this.getNomeTemp()+"\n"+ "Sexo: " + this.getSexo()+"\n"+ 
-		"Idade: "+ this.getIdadeAprox()+ " meses\n" + "Adotado: "+ this.isAdotado());
+		System.out.println("Nome: "+ this.getNomeTemp()+"\n"+ "Sexo: " + this.getSexo()
+		+"\n"+ 
+		"Idade: "+ this.getIdadeAprox()+ " meses\n" + "Adotado: "+ this.isAdotado()+"\n"
+		+"Vermifugado: "+ this.isVermifugado()+ "\n"
+		+"Castrado : "+ this.isCastrado()+ "\n"
+		+"Vacinado: "+ this.isVacinado());
 		System.out.println();
 	}	
 	

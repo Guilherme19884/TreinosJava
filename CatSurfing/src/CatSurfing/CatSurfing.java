@@ -18,9 +18,7 @@ public class CatSurfing {
 		Scanner ler = new Scanner(System.in);
 		String nomeDono = ler.next(); //faz isso quando mudar o gato e quiser que o nome do dono apareca
 					//gato0.setNomeDono(nomeDono); é mudar o numero do gato e chamar o meétodo
-		gato0.setNomeDono(nomeDono);
-		gato0.queroAdotar();
-		gato0.verificarAdocao();
+		gato0.status();
 		
 		/*o que vc pode testar no sistema:
 		 * status () - mostra o cadastro do gato
