@@ -57,9 +57,10 @@ public class Produto {
 
 	public String Venda(int quantidadeItens, int diasPassados) {
 		if (dataFabricacao > vencimento) {
-			return "Não foi possível efetuar a venda,o produto já passou da validade";
+			return "Nao foi possivel efetuar a venda,o produto ja passou da validade";
 		} else {
 			estoque -= quantidadeItens;
+			System.out.println(" Estoque atual: "+ this.estoque);
 
 			if (estoque == 0) {
 				estoqueVazio = true;
@@ -94,7 +95,7 @@ public class Produto {
 				+ tipo 
 				+ "\n O valor $"
 				+ valor 
-				+"\n vai vencer da data de fabricacao mais: "
+				+"\n vai vencer dia: "
 				+ vencimento 
 				+ " dias"
 				+ "\n quantidade no estoque: "

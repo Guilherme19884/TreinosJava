@@ -33,7 +33,7 @@ public class Hortifruit {
 		dataFabricacao = sc.nextInt();
 		produto.setDataFabricacao(dataFabricacao);
 		
-		System.out.println("Digite quantos dias a partir da data de fabriacacao eh a validade: ");
+		System.out.println("Digite a soma da data de fabricacao mais a validade em dias: ");
 		vencimento = sc.nextInt();
 		produto.setVencimento(vencimento);
 	
@@ -52,6 +52,7 @@ public class Hortifruit {
 		System.out.println("========================VENDER PRODUTO========================");
 		
 		System.out.println(produto);
+		System.out.println(produto.Venda(2, 1));
 		
 		
 		
