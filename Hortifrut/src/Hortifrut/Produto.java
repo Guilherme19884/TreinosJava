@@ -37,10 +37,13 @@ public class Produto {
 
 	public int getEstoque() {
 		return estoque;
+		
+		
 	}
 
 	public void setEstoque(int estoque) {
 		this.estoque = estoque;
+		this.estoqueVazio = true;
 	}
 
 	public String getTipo() {
@@ -58,25 +61,16 @@ public class Produto {
 	public String Venda(int quantidadeItens, int diasPassados) {
 		if (dataFabricacao > vencimento) {
 			return "Nao foi possivel efetuar a venda,o produto ja passou da validade";
-		} else {
+		} 
+		else if(estoque == 0) {
+			this.estoqueVazio = true;
+			return "Estoque vazio = " + this.getEstoqueVazio();
+		}
+		
+		else  {
 			estoque -= quantidadeItens;
-			System.out.println(" Estoque atual: "+ this.estoque);
-
-			if (estoque == 0) {
-				estoqueVazio = true;
-			}
-
-			float TotalLucro = valor * quantidadeItens;
-
-			if (diasPassados == vencimento - 1) {
-				TotalLucro = TotalLucro - (TotalLucro * 10 / 100);
-
-				return "Houve 10% de desconto,o lucro total foi de: R$" + TotalLucro;
-			}
-
-			else {
-				return "Venda efetuada com sucesso,o lucro total foi de: R$" + TotalLucro;
-			}
+			return " Estoque atual: "+ this.estoque;
+			
 		}
 	}
 
@@ -99,7 +93,7 @@ public class Produto {
 				+ vencimento 
 				+ " dias"
 				+ "\n quantidade no estoque: "
-				+ estoque
+				+ this.getEstoque()
 				+ "\n O estoque esta vazio: "
 				+ getEstoqueVazio();
 		
