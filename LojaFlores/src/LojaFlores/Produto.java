@@ -74,24 +74,19 @@ public class Produto {
 	
 	
 	public void cadastrar () {
-		List<Produto> prod = new ArrayList<>();
-		int i = 0;
-		while( i< 10) {
-			Produto actual = new Produto("nome", "modelo", tamanho, preco, vaso, estoque); 
-			prod.add(actual);
-			i++;
-		}
+		Produto[] prod = new Produto[100];
+		for(int i = 0; i< prod.length; i++){
+          //  prod[i] = alunos[i]; corrigir isso aqui...
+        }
 	}
 	
 	public void listar() {
 		
 		
 	}
-	public void vender() {
-		System.out.println("Qual o modelo que deseja: "+ this.getNome());
+	public void vender(String nome, float valor, int quantidade) {
+		
 		
 	}
-	
-	
 	
 }
