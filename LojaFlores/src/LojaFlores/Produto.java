@@ -22,7 +22,8 @@ public class Produto {
 		this.vaso = vaso;
 		this.estoque = estoque;
 	}
-//modificadores
+
+	//modificadores
 	public String getNome() {
 		return nome;
 	}
@@ -73,11 +74,9 @@ public class Produto {
 // Métodos publicos
 	
 	
-	public void cadastrar () {
-		Produto[] prod = new Produto[100];
-		for(int i = 0; i< prod.length; i++){
-          //  prod[i] = alunos[i]; corrigir isso aqui...
-        }
+	public void cadastrar (String nome, String cor, float tamanho, float preco, boolean vaso,
+			int estoque) {
+		
 	}
 	
 	public void listar() {
