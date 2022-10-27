@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="java.util.Locale"/>
     <fullyQualifiedTypeName name="aula04Guanabara.Caneta"/>
     <fullyQualifiedTypeName name="Hortifrut.Produto"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="LojaFlores.LojaFlores"/>
 </qualifiedTypeNameHistroy>

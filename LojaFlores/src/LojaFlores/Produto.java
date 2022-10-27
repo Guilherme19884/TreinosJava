@@ -1,5 +1,6 @@
 package LojaFlores;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +11,7 @@ public class Produto {
 	private float preco;
 	private boolean vaso;
 	private int estoque;
+	private int mesFloresce;
 	
 //Construtor 
 	public Produto(String nome, String cor, float tamanho, float preco, boolean vaso,
@@ -71,6 +73,18 @@ public class Produto {
 		this.estoque = estoque;
 	}
 	
+	public int getMesFloresce() {
+		return mesFloresce;
+	}
+	public void setMesFloresce(int mesFloresce, int desconto) {
+		this.mesFloresce = mesFloresce;
+		
+		float valorDescontado;
+		if(this.mesFloresce == LocalDate.now().getMonthValue()) {
+			valorDescontado = this.preco * desconto/100;
+			this.preco= this.preco - valorDescontado;
+		}
+	}
 // Métodos publicos
 	
 	
