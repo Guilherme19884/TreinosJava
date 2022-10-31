@@ -24,7 +24,7 @@ public class Lutador {
 	}
 	public void status() {
 		System.out.println(this.getNome() + " eh um peso" + this.getCategoria());
-		System.out.println("Ganou " + this.getVitorias() + " vezes");
+		System.out.println("Ganhou " + this.getVitorias() + " vezes");
 		System.out.println("Perdeu " + this.getDerrotas() + " vezes");
 		//parei na aula 07 minuto 14:45;
 	}
