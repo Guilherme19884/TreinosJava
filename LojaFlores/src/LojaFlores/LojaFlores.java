@@ -28,6 +28,6 @@ public class LojaFlores {
 		for (int i = 0; i < flores.size(); i++) {
 			System.out.println("Preço: " + flores.get(i).getPreco());
 		}
-		Ainda precisa completar o código;
+		//Ainda precisa completar o código;
 	}
 }
