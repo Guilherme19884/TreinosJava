@@ -26,8 +26,9 @@ public class Lutador {
 		System.out.println(this.getNome() + " eh um peso" + this.getCategoria());
 		System.out.println("Ganhou " + this.getVitorias() + " vezes");
 		System.out.println("Perdeu " + this.getDerrotas() + " vezes");
-		//parei na aula 07 minuto 14:45;
+	
 	}
+	
 	public void ganharLuta() {
 		this.setVitorias(this.getVitorias()+1);
 	//	this.vitorias = this.vitorias +1; pode ser assim tb

@@ -7,4 +7,7 @@ public class CustosCondominiais {
 	private int mesPintura;
 	private int mesServiços;
 	private float valorTotalMensalPagar;
+	
+	
+	
 }
