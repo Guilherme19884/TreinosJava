@@ -45,17 +45,24 @@ public class CustosCondominiais {
 		return valorTotalMensalPagar;
 	}
 	public void setValorTotalMensalPagar(float valorTotalMensalPagar) {
-		this.valorTotalMensalPagar = valorTotalMensalPagar;
+		this.valorTotalMensalPagar = valorTotalMensalPagar + this.getContaAgua();
 		if(isMesPintura() && isMesServicos()) {
 			// pegar o valor da pintura com o usuario
 			// pegar o valor de serviço de jardinagem com o usuário
 		}
 		if(LocalDate.now().getMonthValue() <= 5) {
 			float descontoValor;
-			descontoValor = this.valorCondominio * 10/100;
+			descontoValor = this.valorTotalMensalPagar * 10/100;
 		}
+		
 	}
 	
-	
+	double valorParcelaMorador = this.valorTotalMensalPagar /10 ;
+	public String toString() {
+		return "A conta geral do condominio ficou "
+				+ this.getValorTotalMensalPagar()
+				+" Que vai ser divido entre os 10 moradores do condominio ficando: "
+				+ valorParcelaMorador ;
+	}
 	
 }
