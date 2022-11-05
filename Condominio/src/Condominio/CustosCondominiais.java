@@ -71,7 +71,8 @@ public class CustosCondominiais {
 		else {
 			serv= "Nao";
 		}
-		return "A conta geral do condominio ficou "
+		return "\n*****************RESULTADO***************************\n"
+				+"A conta geral do condominio ficou "
 				+ this.getValorTotalMensalPagar()
 				+"\n tiveram esses servicos extras: "
 				+"\n Teve Servico de Manutencao? "
