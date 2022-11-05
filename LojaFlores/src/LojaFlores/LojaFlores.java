@@ -20,14 +20,49 @@ public class LojaFlores {
 		 * flor2.setCor("azul"); flor2.setPreco(10); flor2.setMesFloresce(11, 5);
 		 */
 
-		ArrayList<Produto> flores = new ArrayList<>();
+		
+		 ArrayList<Produto> flores = new ArrayList<>();
 		flores.add(flor);
 		flores.add(flor1);
 		flores.add(flor2);
+		
 
 		for (int i = 0; i < flores.size(); i++) {
 			System.out.println("Preço: " + flores.get(i).getPreco());
 		}
-		//Ainda precisa completar o código;
+		
+		//intanciar um vaso
+		Vaso vaso = new Vaso();
+		vaso.setCor("verde");
+		vaso.setMaterial("plastico");
+		vaso.setValor(3.5f);
+		
+		//System.out.println("O vaso da flor: "+ flor.getVaso().getMaterial());
+		
+		//instanciando novo vaso
+		Vaso vaso1 = new Vaso();
+		vaso1.setCor("amarelo");
+		vaso1.setMaterial("ceramica");
+		vaso1.setValor(5.f);
+		
+		//System.out.println("O vaso da flor 1 : "+ flor1.getVaso().getMaterial());
+		
+		// adicionar vaso a uma flor 
+		flor.setVaso(vaso);
+		flor1.setVaso(vaso1);
+		
+		//mostrar na tela vaso associado
+		System.out.println("O vaso da flor: "+ flor.getVaso().getMaterial());
+		System.out.println("O Material do vaso 1: "+ flor1.getVaso().getMaterial() );
+		System.out.println("O Valor do vaso 1 : "+ flor1.getVaso().getValor());
+		System.out.println("A cor do vaso 1: " + flor1.getVaso().getCor());
+		
+		/*flor1.setValorTotal(flor.getPreco(),vaso.getValor());
+		* esse foi a 1 a primeira forma que fiz que tem comentário na em Produto
+		* linha 36 e 37
+		*/
+		System.out.println("Valor total: " +flor1.getValorTotal());
+		System.out.println(flor2.getPreco());
+		System.out.println("Valor Total da flor: "+ flor2.getValorTotal());
 	}
 }
