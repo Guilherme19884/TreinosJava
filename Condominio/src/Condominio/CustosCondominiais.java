@@ -11,6 +11,7 @@ public class CustosCondominiais {
 	private float valorTotalMensalPagar;
 	
 	
+	
 	public float getContaEnergia() {
 		return contaEnergia;
 	}
@@ -42,27 +43,45 @@ public class CustosCondominiais {
 		this.mesServicos = mesServicos;
 	}
 	public float getValorTotalMensalPagar() {
+		
 		return valorTotalMensalPagar;
 	}
 	public void setValorTotalMensalPagar(float valorTotalMensalPagar) {
-		this.valorTotalMensalPagar = valorTotalMensalPagar + this.getContaAgua();
-		if(isMesPintura() && isMesServicos()) {
-			// pegar o valor da pintura com o usuario
-			// pegar o valor de serviço de jardinagem com o usuário
-		}
-		if(LocalDate.now().getMonthValue() <= 5) {
+		this.valorTotalMensalPagar = valorTotalMensalPagar ;
+		if((this.mesServicos) &&  (LocalDate.now().getDayOfMonth() <= 5)) {
 			float descontoValor;
 			descontoValor = this.valorTotalMensalPagar * 10/100;
+			this.valorTotalMensalPagar -=  descontoValor;
 		}
-		
 	}
 	
-	double valorParcelaMorador = this.valorTotalMensalPagar /10 ;
+	
 	public String toString() {
+		String pintou;
+		
+		if (this.isMesPintura()) {
+			pintou = "Sim";
+		} else {
+			pintou = "Não";
+		};
+		
 		return "A conta geral do condominio ficou "
 				+ this.getValorTotalMensalPagar()
-				+" Que vai ser divido entre os 10 moradores do condominio ficando: "
-				+ valorParcelaMorador ;
+				+"\n tiveram esses servicos extras: "
+				+"\n Teve Servico de Manutencao? "
+				+this.isMesServicos()
+				+"\n Teve pintura esse mes? "
+				+ pintou;
+					
 	}
 	
+	//public void somaDasContas() {
+	//	valorTotalMensalPagar += contaAgua +  contaEnergia ;
+	//	System.out.println(getValorTotalMensalPagar());
+	//}
+	
+	public String demonstrativoContas(String demonstrativo) {
+		demonstrativo += contaAgua +  contaEnergia ;
+		return demonstrativo ;
+	}
 }
