@@ -58,20 +58,28 @@ public class CustosCondominiais {
 	
 	public String toString() {
 		String pintou;
+		String serv;
 		
 		if (this.isMesPintura()) {
 			pintou = "Sim";
 		} else {
-			pintou = "Não";
+			pintou = "Nao";
 		};
-		
+		if (this.isMesServicos()) {
+			serv ="Sim";
+		}
+		else {
+			serv= "Nao";
+		}
 		return "A conta geral do condominio ficou "
 				+ this.getValorTotalMensalPagar()
 				+"\n tiveram esses servicos extras: "
 				+"\n Teve Servico de Manutencao? "
 				+this.isMesServicos()
 				+"\n Teve pintura esse mes? "
-				+ pintou;
+				+ pintou
+				+"\n Teve servico esse mes? "
+				+ serv;
 					
 	}
 	
