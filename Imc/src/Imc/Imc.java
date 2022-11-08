@@ -1,22 +1,19 @@
 package Imc;
 
 public class Imc {
-	private String nome;
+	
 	private float peso;
 	private float altura;
 	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+	
+	
 	public float getPeso() {
 		return peso;
 	}
 	public void setPeso(float peso) {
 		this.peso = peso;
 	}
+	
 	public float getAltura() {
 		return altura;
 	}
@@ -24,5 +21,13 @@ public class Imc {
 		this.altura = altura;
 	}
 	
+	public float calcularImc() {
+		float Imc = this.peso /(this.altura * this.altura);
+		return Imc;
+	}
+	
+	public String toString() {
+		return "Seu Imc e: " + calcularImc();
+	}
 	
 }
