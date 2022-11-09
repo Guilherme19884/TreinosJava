@@ -1,6 +1,6 @@
 package LojaBike;
 
-public class DonoBike {
+public class DonoBike extends Pessoa{
 	private String nomeCiclista;
 	private String marcaBike;
 	private String modeloBike;
