@@ -14,6 +14,8 @@ public class Produto {
 	private int mesFloresce;
 	private boolean temVaso;
 	private float valorTotal;
+	private ArrayList <Acessorio> acessorios;
+	
 	
 //Construtor 
 	public Produto(String nome, String cor, float tamanho, float preco, boolean temVaso,
@@ -25,9 +27,13 @@ public class Produto {
 		this.preco = preco;
 		this.temVaso = temVaso;
 		this.estoque = estoque;
+		this.acessorios = new ArrayList<Acessorio>();
 		this.calcularValorTotal();
 	}
-	
+	//public Produto() {
+		//super();
+		//this.acessorios = new ArrayList<Acessorio>();
+	//}
 	/*public float getValorTotal() {
 	*	if (this.vaso != null) {
 	*		return this.valorTotal = this.preco + this.getVaso().getValor();
@@ -45,6 +51,11 @@ public class Produto {
 			this.valorTotal = this.preco + this.vaso.getValor();
 		}else {
 			this.valorTotal = this.preco;
+		}
+		if (this.acessorios.size()> 0) {
+			for (int i = 0; i < this.acessorios.size(); i++) {
+				this.valorTotal += this.acessorios.get(i).getPreco() ;
+			}
 		}
 	}
 	/*public void setValorTotal(float preco, float valorVaso) {
@@ -123,21 +134,17 @@ public class Produto {
 			this.preco= this.preco - valorDescontado;
 		}
 	}
-// Métodos publicos
-	
-	
-	public void cadastrar (String nome, String cor, float tamanho, float preco, boolean vaso,
-			int estoque) {
-		
+
+	public ArrayList<Acessorio> getAcessorios (){
+		return acessorios;
+	}
+	public void setAcessorios(ArrayList<Acessorio>acessorios) {
+		this.acessorios = acessorios;
+		calcularValorTotal();
 	}
 	
-	public void listar() {
-		
-		
+	public void setAcessorio(Acessorio acessorio) {
+		this.acessorios.add(acessorio);
+		calcularValorTotal();
 	}
-	public void vender(String nome, float valor, int quantidade) {
-		
-		
-	}
-	
 }

@@ -12,7 +12,8 @@ public class LojaFlores {
 		Produto flor1 = new Produto("Rosa ", "branca ", 20f, 2000f, true, 12);
 		// obejeto 3
 		Produto flor2 = new Produto("Rosa ", "amarela ", 20f, 1500f, true, 12);
-
+		
+	
 		/*
 		 * Outra for de fazer, seria se eu não tivesse feito o construtor faria assim:
 		 * 
@@ -45,14 +46,16 @@ public class LojaFlores {
 		vaso1.setMaterial("ceramica");
 		vaso1.setValor(5.f);
 		
-		//System.out.println("O vaso da flor 1 : "+ flor1.getVaso().getMaterial());
 		
 		// adicionar vaso a uma flor 
 		flor.setVaso(vaso);
 		flor1.setVaso(vaso1);
 		
+		System.out.println("O vaso da flor 1 : "+ flor1.getVaso().getMaterial());
+		
+		
 		//mostrar na tela vaso associado
-		System.out.println("O vaso da flor: "+ flor.getVaso().getMaterial());
+		//System.out.println("O vaso da flor: "+ flor.getVaso().getMaterial());
 		System.out.println("O Material do vaso 1: "+ flor1.getVaso().getMaterial() );
 		System.out.println("O Valor do vaso 1 : "+ flor1.getVaso().getValor());
 		System.out.println("A cor do vaso 1: " + flor1.getVaso().getCor());
@@ -64,5 +67,35 @@ public class LojaFlores {
 		System.out.println("Valor total: " +flor1.getValorTotal());
 		System.out.println(flor2.getPreco());
 		System.out.println("Valor Total da flor: "+ flor2.getValorTotal());
+		
+		
+		//instanciar uns acessórios
+		
+		Acessorio acessorio1 = new Acessorio();
+		acessorio1.setNome("laço");
+		acessorio1.setDescricao("fita vermelha");
+		acessorio1.setPreco(4.5f);
+		
+		Acessorio acessorio2 = new Acessorio();
+		acessorio2.setNome("pratinho");
+		acessorio2.setDescricao("pratinho da dlor de plático");
+		acessorio2.setPreco(4.5f);
+		
+		ArrayList<Acessorio>acessorios = new ArrayList<>();
+		acessorios.add(acessorio1);
+		acessorios.add(acessorio2);
+		
+		flor.setAcessorios(acessorios);
+		
+		//instanciar mais um acessório
+		Acessorio acessorio3 = new Acessorio();
+		acessorio3.setNome("Embalagem");
+		acessorio3.setDescricao("Embalagem Rosa");
+		acessorio3.setPreco(5.0f);
+		
+		flor1.setAcessorio(acessorio3);
+		
+		
+		System.out.println(flor1.getValorTotal());
 	}
 }
