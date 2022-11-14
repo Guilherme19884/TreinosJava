@@ -1,5 +1,6 @@
 package PostoCombustivel;
 
+
 public class Bomba {
 	private String tipoCombustivel;
 	private float valorCombustivel;
@@ -35,20 +36,27 @@ public class Bomba {
 		return ValorASerAbastecido; 
 		
 	}
+	/*método onde é informado a quantidade litro abastecido e mostra o valor referente a 
+	 * quantidade que vai ser pago pelo cliente.
+	 */
 	public  float abastecerPorLitro(float abastecerPorLitro ) {
-		/*método onde é informado a quantidade litro abastecido e mostra o valor referente a 
-		 * quantidade que vai ser pago pelo cliente.
-		 */
+		
 		abastecerPorLitro = abastecerPorLitro * this.valorCombustivel ;
 		return abastecerPorLitro ;
 	}
-	public void alterarValor() {
-		
+	/* 
+	 * Alterar o valor do litro de combustível
+	 */
+	public void alterarValor(float novoValorCombustivel) {
+		this.valorCombustivel = novoValorCombustivel;
 	}
-	public void alterarCombustivel() {
-		
+	/*
+	 * Esse metodo tem como função principal alterar o tipo de combustivel
+	 */
+	public void alterarCombustivel(String tipoNovoCombustivel) {
+		this.tipoCombustivel = tipoNovoCombustivel;
 	}
-	public void quantidadeCombustivel() {
-		
+	public void alterarQuantidadeCombustivel(int novaQtd) {
+		this.quantidadeCombustivel = novaQtd;
 	}
 }

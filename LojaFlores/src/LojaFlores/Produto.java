@@ -30,10 +30,7 @@ public class Produto {
 		this.acessorios = new ArrayList<Acessorio>();
 		this.calcularValorTotal();
 	}
-	//public Produto() {
-		//super();
-		//this.acessorios = new ArrayList<Acessorio>();
-	//}
+	
 	/*public float getValorTotal() {
 	*	if (this.vaso != null) {
 	*		return this.valorTotal = this.preco + this.getVaso().getValor();
