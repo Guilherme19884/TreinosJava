@@ -8,6 +8,7 @@ public class Posto {
 		Scanner sc = new Scanner(System.in);
 		Bomba bomba = new Bomba();
 		
+		
 		bomba.setValorCombustivel(5.0f);
 		bomba.setTipoCombustivel("Gasolina");
 		bomba.setQuantidadeCombustivel(10);

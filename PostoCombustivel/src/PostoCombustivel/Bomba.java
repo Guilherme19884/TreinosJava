@@ -32,7 +32,7 @@ public class Bomba {
 		/*metodo que é informado o valor a ser abastecido e mostra a quantidade de litros que 
 		  colcada no veículo.*/
 		
-		ValorASerAbastecido *= this.valorCombustivel  ;
+		ValorASerAbastecido /= this.valorCombustivel  ;
 		return ValorASerAbastecido; 
 		
 	}
