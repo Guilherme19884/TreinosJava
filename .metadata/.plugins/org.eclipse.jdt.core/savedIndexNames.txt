@@ -16,14 +16,17 @@ INDEX VERSION 1.131+C:\Users\guilh\OneDrive\Documentos\Projetos Java\treino\.met
 259080564.index
 1531339194.index
 1420162881.index
-1911141893.index
+1590015337.index
 442788009.index
 526232102.index
 1717091298.index
 2696489553.index
-1590015337.index
+1911141893.index
 831757080.index
 2372862177.index
+657308480.index
+1184156650.index
+1372677264.index
 316685124.index
 1473032068.index
 2544202940.index
@@ -31,6 +34,7 @@ INDEX VERSION 1.131+C:\Users\guilh\OneDrive\Documentos\Projetos Java\treino\.met
 9614238.index
 2325516309.index
 1708615507.index
+2543573037.index
 1874008984.index
 2424431738.index
 1655532511.index
