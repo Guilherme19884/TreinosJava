@@ -6,12 +6,15 @@ public class Capoeira {
 		Capoeirista pernaBamba = new Capoeirista ();
 		
 		pernaBamba.setNome("Jorge");
-		//pernaBamba.setCordel("verde");
-		pernaBamba.setTempoDeCapoeiraEmAnos(1);
+		pernaBamba.setTempoDeCapoeiraEmAnos(5);
 		
 		System.out.println(pernaBamba.getNome() + " Tem o apelido na capoeira de perna "
-				+ "bamba, tem o cordel " +pernaBamba.getCordel() + " conseguiu se graduar apos "
+				+ "bamba, tem o " +pernaBamba.getCordel() + " conseguiu se graduar apos "
 				+ pernaBamba.getTempoDeCapoeiraEmAnos() + " ano");
+		System.out.println("++++++++++++++++");
+		System.out.println(pernaBamba.getTempoDeCapoeiraEmAnos()+" Temppo de capoeira");
+		System.out.println(pernaBamba.getCordel() );
+		
 	}
 
 }
