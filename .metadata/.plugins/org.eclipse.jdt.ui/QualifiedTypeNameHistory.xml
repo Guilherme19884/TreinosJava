@@ -9,4 +9,6 @@
     <fullyQualifiedTypeName name="Imc.Imc"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="LojaFlores.Produto"/>
+    <fullyQualifiedTypeName name="ProjetoCapoeira.Capoeira"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
 </qualifiedTypeNameHistroy>

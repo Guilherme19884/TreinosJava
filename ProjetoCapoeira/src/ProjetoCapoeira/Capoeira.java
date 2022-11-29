@@ -11,9 +11,9 @@ public class Capoeira {
 		System.out.println(pernaBamba.getNome() + " Tem o apelido na capoeira de perna "
 				+ "bamba, tem o " +pernaBamba.getCordel() + " conseguiu se graduar apos "
 				+ pernaBamba.getTempoDeCapoeiraEmAnos() + " ano");
-		System.out.println("++++++++++++++++");
-		System.out.println(pernaBamba.getTempoDeCapoeiraEmAnos()+" Temppo de capoeira");
-		System.out.println(pernaBamba.getCordel() );
+		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
+		System.out.println(pernaBamba.getTempoDeCapoeiraEmAnos()+" anos de capoeira");
+	
 		
 	}
 
