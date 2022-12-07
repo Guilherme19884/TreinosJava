@@ -9,10 +9,14 @@ public class LojaFlores {
 		// objeto 1
 		Produto flor = new Produto("Rosa ", "vermelha ", 20f, 100f, false, 12);
 		// obejeto 2
-		Produto flor1 = new Produto("Rosa ", "branca ", 20f, 2000f, true, 12);
+		Produto flor1 = new Produto("Rosa ", "Rosa ", 20f, 2000f, true, 12);
 		// obejeto 3
 		Produto flor2 = new Produto("Rosa ", "amarela ", 20f, 1500f, true, 12);
 		
+		//nesse caso criei o objeto flor 3 para add flores dentro ArrayList <Produto>
+		//sem esse objeto não dá para add flores
+		
+		Produto flor3 = new Produto("Rosa", "azul", 20f, 600f, false, 10);
 	
 		/*
 		 * Outra for de fazer, seria se eu não tivesse feito o construtor faria assim:
@@ -26,6 +30,7 @@ public class LojaFlores {
 		flores.add(flor);
 		flores.add(flor1);
 		flores.add(flor2);
+		flores.add(flor3);
 		
 
 		for (int i = 0; i < flores.size(); i++) {
