@@ -6,7 +6,14 @@ public abstract class Jogador {
 	protected float peso;
 	protected float altura;
 	protected boolean estaEmCampo;
+	protected double salario;
 	
+	public double getSalario() {
+		return salario;
+	}
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -38,9 +45,11 @@ public abstract class Jogador {
 		this.estaEmCampo = estaEmCampo;
 	}
 	
+		
 	public void inicializarJogador(float altura, float peso, String nome) {
 		this.altura = altura;
 		this.nome = nome;
 		this.peso = peso;
 	}
+	
 }
