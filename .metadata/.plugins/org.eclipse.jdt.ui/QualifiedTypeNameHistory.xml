@@ -11,4 +11,6 @@
     <fullyQualifiedTypeName name="LojaFlores.Produto"/>
     <fullyQualifiedTypeName name="ProjetoCapoeira.Capoeira"/>
     <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="Futebol.JogadorTitular"/>
 </qualifiedTypeNameHistroy>

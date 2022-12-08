@@ -22,15 +22,20 @@ public class Selecao {
 	public ArrayList<Jogador> getJogadores() {
 		return jogadores;
 	}
-	public void setJogadores(ArrayList<Jogador> jogadores) {
+	public void setJogadores(ArrayList<Jogador>jogadores) {
 		this.jogadores = jogadores;
 	}
 	
 	public double calcularSalarioTotal() {
 		double valorTotal = 0;
 		if (this.jogadores != null) {
-			for(int i =0; i < this.jogadores.size(); i++) {
-				valorTotal += this.jogadores.get(i).getSalario();
+		//	for(int i =0; i < this.jogadores.size(); i++) {
+			//	valorTotal += this.jogadores.get(i).getSalario();
+		//	}
+		// equivalente a :
+			
+			for(Jogador jogador :this.jogadores) {
+				valorTotal += jogador.getSalario();
 			}
 		}	
 		return valorTotal;
