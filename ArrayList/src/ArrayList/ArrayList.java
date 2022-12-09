@@ -40,6 +40,10 @@ public class ArrayList {
 		String nome = listaPessoas.stream().filter(p-> p.charAt(0) == 'A').
 				findFirst().orElse(null);
 		System.out.println(nome);
+		/*
+		 * A função acima se tiver um nome na lista com a letra que vc escolhe irá aparecer
+		 * caso contrário, retornar null.
+		 */
 	}
 
 }
