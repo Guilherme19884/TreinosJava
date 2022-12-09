@@ -6,7 +6,7 @@ public class Each {
 		String[] vect = new String [] {"Gui", "Lai", "Bia"};
 		
 		System.out.println(vect[1]); // essa é a primeira forma que apredemos nos cursos
-		
+		// basta mudar o numero dentro do colchetes que vai alterar o ressultado.
 		System.out.println("---------------------");
 		
 		for(int i = 0; i <vect.length; i ++ ) {
