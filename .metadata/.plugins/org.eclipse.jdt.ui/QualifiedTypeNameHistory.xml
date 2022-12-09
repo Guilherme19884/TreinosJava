@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="aula04Guanabara.Caneta"/>
     <fullyQualifiedTypeName name="Hortifrut.Produto"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="LojaFlores.LojaFlores"/>
     <fullyQualifiedTypeName name="Imc.Imc"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
@@ -13,4 +12,5 @@
     <fullyQualifiedTypeName name="org.junit.Assert"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="Futebol.JogadorTitular"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
