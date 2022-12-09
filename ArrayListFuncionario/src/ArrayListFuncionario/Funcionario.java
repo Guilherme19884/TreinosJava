@@ -5,6 +5,15 @@ public class Funcionario {
 	private int id;
 	private float salario;
 	
+	
+	public Funcionario(String nome, int id, float salario) {
+		super();
+		this.nome = nome;
+		this.id = id;
+		this.salario = salario;
+	}
+	
+	
 	public String getNome() {
 		return nome;
 	}
@@ -28,4 +37,5 @@ public class Funcionario {
 		float valorTotal = this.salario * percentual/100;
 		this.salario += valorTotal;
 	}
+	
 }
